@@ -56,5 +56,16 @@ int main()
 	cout << "Sorted names: ";
 	display_vector(names);
 
-	cout << "BInary search for Lebron James: " << (binary_search_custom(names, string("Lebron James")) ? " was found\n" : " was not found in the collection!\n");
+	cout << "Binary search for Lebron James: " << (binary_search_custom(names, string("Lebron James")) ? " was found\n" : " was not found in the collection!\n");
+
+	//assignemtn
+	vector<int> newnumbers = {6, 1, 2, 6, 18, 13, 19};
+	cout << "OG Numbers: ";
+	display_vector(newnumbers);
+
+	cout << "Count how many times 6 appears\n";
+	cout << "6 appears " << count_occurences(newnumbers, 6) << " times.\n";
+
+	cout << "\nFind Max\n";
+	cout << find_max(newnumbers) << endl;
 }

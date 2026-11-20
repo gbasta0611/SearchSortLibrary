@@ -56,4 +56,26 @@ void selection_sort(std::vector<T>& items){
 	}
 }
 
+template <typename T>
+int count_occurences(const std::vector<T>& items, const T& target){
+	int total = 0;
+	for (std::size_t i = 0; i < items.size(); i++){
+		if(items[i] == target){
+			total++;
+		}
+	}
+	return total;
+}
+
+template <typename T>
+int find_max(const std::vector<T>& items){
+	T biggest = 0;
+	for (std::size_t i = 0; i < items.size(); i++){
+		if (items[i] > biggest){
+			biggest = items[i];
+		}
+	}
+	return biggest;
+}
+
 #endif
